@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>글쓰기</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="jQuery/jquery-1.12.4.min.js"></script>
+  <script src="jQuery/jscript.js"></script>
+</head>
+
+<body>
+  <div class="wrap clearfix">
+    <header>
+      <h1><a href="main.html" target="_self"><img src="images/rvlogo.png" alt="로고" id="logo"></a></h1>
+      <nav>
+        <ul>
+          <li class="lv1">
+            <a href="list.html" target="_self">리뷰</a>
+          </li>
+          <li class="lv1">
+            <a href="list.html" target="_self">커뮤니티</a>
+            <ul class="lv2">
+              <li><a href="list.html" target="_self">아고라</a></li>
+              <li><a href="list.html" target="_self">제안</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="sl">
+        <div class="search" style="display: inline-block">
+          <input type="text" placeholder="검색어 입력">
+          <img src="images/magnifying-glass.png">
+        </div>
+        <div style="display: inline-block"><button class="loginbtn"><a href="login.html" target="_self">로그인</a></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <h2 class="posth2">글쓰기</h2><br />
+      <form action="write.jsp" method="post">
+        <div class="form-group">
+          <label for="title"></label>
+          <input type="text" class="form-control" id="title" placeholder="제목" name="title" maxlength="100"
+            required="required" pattern=".{4,100}">
+        </div>
+        <div class="form-group">
+          <label for="content"></label><br />
+          <textarea class="form-control" rows="5" id="content" name="content" placeholder="내용"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="writer"></label>
+          <input type="text" class="form-control" id="writer" placeholder="작성자" name="writer">
+        </div><br />
+        <input type="file" name="SelectFile" />
+        <button type="submit" class="psubmitbtn">등록</button>
+      </form>
+    </div>
+  </div>
+
+  <footer id="footer" class="wrap">
+    <p>copyright All rights reserved Revook</p>
+    <div id="sns">
+      <a href="http://www.twitter.com" target="_self"><img src="images/twitter.png" width="20" alt="Twitter"></a>
+      <a href="http://www.facebook.com" target="_self"><img src="images/facebook.png" width="20" alt="Facebook"></a>
+      <a href="http://www.instagram.com" target="_self"><img src="images/instagram.png" width="20" alt="Twitter"></a>
+    </div>
+  </footer>
+</body>
+
+</html>

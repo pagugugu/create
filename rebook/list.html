@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>목록</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="jQuery/jquery-1.12.4.min.js"></script>
+    <script src="jQuery/jscript.js"></script>
+</head>
+
+<body>
+    <div class="wrap clearfix">
+        <header>
+            <h1><a href="main.html" target="_self"><img src="images/rvlogo.png" alt="로고" id="logo"></a></h1>
+            <nav>
+                <ul>
+                    <li class="lv1">
+                        <a href="list.html" target="_self">리뷰</a>
+                    </li>
+                    <li class="lv1">
+                        <a href="list.html" target="_self">커뮤니티</a>
+                        <ul class="lv2">
+                            <li><a href="list.html" target="_self">아고라</a></li>
+                            <li><a href="list.html" target="_self">제안</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sl">
+                <div class="search" style="display: inline-block">
+                    <input type="text" placeholder="검색어 입력">
+                    <img src="images/magnifying-glass.png">
+                </div>
+                <div style="display: inline-block"><button class="loginbtn"><a href="login.html"
+                            target="_self">로그인</a></button></div>
+            </div>
+        </header>
+
+        <table class="board">
+            <tr id="headline">
+                <th colspan="2">제목</th>
+                <th>작성자</th>
+                <th>작성일</th>
+                <th>조회</th>
+                <th>좋아요</th>
+            </tr>
+
+            <tr id="notice">
+                <td>공지</td><a href="#">
+                    <td>시스템 점검 안내</td>
+                    <td>Revook</td>
+                </a>
+                <td>2022.10.10.</td>
+                <td>99</td>
+                <td>0</td>
+            </tr>
+            <tr class="data">
+                <td>194936</td><a href="#">
+                    <td onClick="location.href='material.html'">소설 리뷰 [하얼빈]</td>
+                    <td>리뷰어</td>
+                </a>
+                <td>2022-10-11</td>
+                <td>10</td>
+                <td>1</td>
+            </tr>
+            <tr class="data">
+                <td>194935</td><a href="#">
+                    <td onClick="location.href='material.html'">소설 리뷰 [불편한 편의점]</td>
+                    <td>리뷰어</td>
+                </a>
+                <td>2022-10-11</td>
+                <td>10</td>
+                <td>1</td>
+            </tr>
+            <tr class="data">
+                <td>194934</td><a href="#">
+                    <td onClick="location.href='material.html'">소설 리뷰 [파친코]</td>
+                    <td>리뷰어</td>
+                </a>
+                <td>2022-10-11</td>
+                <td>10</td>
+                <td>1</td>
+            </tr>
+            <tr class="data">
+                <td>194933</td><a href="#">
+                    <td onClick="location.href='material.html'">소설 리뷰 [아버지의 해방일지]</td>
+                    <td>리뷰어</td>
+                </a>
+                <td>2022-10-11</td>
+                <td>10</td>
+                <td>1</td>
+            </tr>
+            <tr class="data">
+                <td>194932</td>
+                <td onClick="location.href='material.html'">소설 리뷰 [달러구트의 꿈 백화점]</td>
+                <td>리뷰어</td>
+                <td>2022-10-11</td>
+                <td>10</td>
+                <td>1</td>
+
+            </tr>
+
+        </table>
+
+        <tr>
+            <td colspan="6"><a href="post.html" target="_self"><button id="postbtn">글쓰기</button></a></td>
+        </tr>
+
+
+        <tr>
+            <td colspan="6">
+                <center>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">다음▶</a>
+                </center>
+            </td>
+        </tr>
+        <br />
+        <footer id="footer" class="wrap">
+            <p>copyright All rights reserved Revook</p>
+            <div id="sns">
+                <a href="http://www.twitter.com" target="_self"><img src="images/twitter.png" width="20"
+                        alt="Twitter"></a>
+                <a href="http://www.facebook.com" target="_self"><img src="images/facebook.png" width="20"
+                        alt="Facebook"></a>
+                <a href="http://www.instagram.com" target="_self"><img src="images/instagram.png" width="20"
+                        alt="Twitter"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

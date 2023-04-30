@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>게시물</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="jQuery/jquery-1.12.4.min.js"></script>
+	<script src="jQuery/jscript.js"></script>
+
+	<style>
+		.letter {
+			width: 70%;
+			margin: auto;
+			display: block;
+			margin-bottom: 50px;
+			margin-top: 10px;
+		}
+
+		.content {
+			height: 450px;
+		}
+
+		footer {
+			position: absolute;
+			bottom: 0;
+			z-index: -99;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrap clearfix">
+		<header>
+			<h1><a href="main.html" target="_self"><img src="images/rvlogo.png" alt="로고" id="logo"></a></h1>
+			<nav>
+				<ul>
+					<li class="lv1">
+						<a href="list.html" target="_self">리뷰</a>
+					</li>
+					<li class="lv1">
+						<a href="list.html" target="_self">커뮤니티</a>
+						<ul class="lv2">
+							<li><a href="list.html" target="_self">아고라</a></li>
+							<li><a href="list.html" target="_self">제안</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="sl">
+				<div class="search" style="display: inline-block">
+					<input type="text" placeholder="검색어 입력">
+					<img src="images/magnifying-glass.png">
+				</div>
+				<div style="display: inline-block"><button class="loginbtn"><a href="login.html"
+							target="_self">로그인</a></button></div>
+			</div>
+		</header>
+
+		<div class="wrap clearfix">
+			<input type="button" value="목록으로" onclick="history_back()" id="listbtn">
+			<div class="material">
+				<h2>제목</h2>
+				<hr>
+				<p>내용</p>
+				<div class="starpoint_wrap">
+					<div class="starpoint_box">
+					  <label for="starpoint_1" class="label_star" title="0.5"><span class="blind">0.5점</span></label>
+					  <label for="starpoint_2" class="label_star" title="1"><span class="blind">1점</span></label>
+					  <label for="starpoint_3" class="label_star" title="1.5"><span class="blind">1.5점</span></label>
+					  <label for="starpoint_4" class="label_star" title="2"><span class="blind">2점</span></label>
+					  <label for="starpoint_5" class="label_star" title="2.5"><span class="blind">2.5점</span></label>
+					  <label for="starpoint_6" class="label_star" title="3"><span class="blind">3점</span></label>
+					  <label for="starpoint_7" class="label_star" title="3.5"><span class="blind">3.5점</span></label>
+					  <label for="starpoint_8" class="label_star" title="4"><span class="blind">4점</span></label>
+					  <label for="starpoint_9" class="label_star" title="4.5"><span class="blind">4.5점</span></label>
+					  <label for="starpoint_10" class="label_star" title="5"><span class="blind">5점</span></label>
+					  <input type="radio" name="starpoint" id="starpoint_1" class="star_radio">
+					  <input type="radio" name="starpoint" id="starpoint_2" class="star_radio">
+					  <input type="radio" name="starpoint" id="starpoint_3" class="star_radio">
+					  <input type="radio" name="starpoint" id="starpoint_4" class="star_radio">
+					  <input type="radio" name="starpoint" id="starpoint_5" class="star_radio">
+					  <input type="radio" name="starpoint" id="starpoint_6" class="star_radio">
+					  <input type="radio" name="starpoint" id="starpoint_7" class="star_radio">
+					  <input type="radio" name="starpoint" id="starpoint_8" class="star_radio">
+					  <input type="radio" name="starpoint" id="starpoint_9" class="star_radio">
+					  <input type="radio" name="starpoint" id="starpoint_10" class="star_radio">
+					  <span class="starpoint_bg"></span>
+					</div>
+				  </div>
+			</div>
+
+
+		</div>
+
+		<footer id="footer" class="wrap">
+			<p>copyright All rights reserved Revook</p>
+			<div id="sns">
+				<a href="http://www.twitter.com" target="_self"><img src="images/twitter.png" width="20"
+						alt="Twitter"></a>
+				<a href="http://www.facebook.com" target="_self"><img src="images/facebook.png" width="20"
+						alt="Facebook"></a>
+				<a href="http://www.instagram.com" target="_self"><img src="images/instagram.png" width="20"
+						alt="Twitter"></a>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

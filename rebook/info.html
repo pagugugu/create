@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Sub3</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="jQuery/jquery-1.12.4.min.js"></script>
+    <script src="jQuery/jscript.js"></script>
+</head>
+
+<body>
+    <div class="wrap clearfix">
+        <header>
+            <h1><a href="main.html" target="_self"><img src="images/rvlogo.png" alt="로고" id="logo"></a></h1>
+            <nav>
+                <ul>
+                    <li class="lv1">
+                        <a href="list.html" target="_self">리뷰</a>
+                    </li>
+                    <li class="lv1">
+                        <a href="list.html" target="_self">커뮤니티</a>
+                        <ul class="lv2">
+                            <li><a href="list.html" target="_self">아고라</a></li>
+                            <li><a href="list.html" target="_self">제안</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sl">
+                <div class="search" style="display: inline-block">
+                    <input type="text" placeholder="검색어 입력">
+                    <img src="images/magnifying-glass.png">
+                </div>
+                <div style="display: inline-block"><button class="loginbtn"><a href="login.html"
+                            target="_self">로그인</a></button></div>
+            </div>
+        </header><br />
+        <div>
+            <form name="login" class="inform" action="index.html" method="post">
+                아이디 확인<br />
+                <input type="text" name="user_ID" class="textfield" placeholder="아이디 입력">
+                <input type="button" class="psubmitbtn" name="user_IDcheck" value="아이디 확인">
+                <br>
+                비밀번호<br>
+                <input type="password" name="user_PW1" class="textfield" value="123456"><br>
+                비밀번호 재확인<br>
+                <input type="password" name="user_PW2" class="textfield" value="123456">
+                <input type="button" class="psubmitbtn" name="user_PWcheck" value="비밀번호 재확인">
+                <br><br>
+                이름<br> <input type="text" class="textfield" name="user_name" value="" placeholder="이름"> <br>
+                생년월일<br>
+                <select name="year">
+                    <option value="">-- 선택 --</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                </select>
+                <select name="month">
+                    <option value="">-- 선택 --</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select name="day">
+                    <option value="">-- 선택 --</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <br><br>
+                성별<br>
+                <label for="man">남자</label>
+                <input type="radio" name="gender" value="m" id="man">
+                <label for="woman">여자</label>
+                <input type="radio" name="gender" value="m" id="woman"> <br><br>
+                이메일<br><input type="email" class="textfield" name="user_email" placeholder="email@gmail.com"><br><br>
+                휴대전화<br>
+                <input type="text" class="textfield" name="user_phone" placeholder="010-****-****">
+                <input type="button" class="psubmitbtn" name="certification" value="인증번호 받기"><br>
+                <input type="text" class="textfield" name="certification" placeholder="인증번호를 입력하세요">
+                <input type="button" class="psubmitbtn" name="certification" value="확인"><br><br>
+            </form>
+        </div><br />
+
+        <footer id="footer" class="wrap">
+            <p>copyright All rights reserved Revook</p>
+            <div id="sns">
+                <a href="http://www.twitter.com" target="_self"><img src="images/twitter.png" width="20"
+                        alt="Twitter"></a>
+                <a href="http://www.facebook.com" target="_self"><img src="images/facebook.png" width="20"
+                        alt="Facebook"></a>
+                <a href="http://www.instagram.com" target="_self"><img src="images/instagram.png" width="20"
+                        alt="Twitter"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
